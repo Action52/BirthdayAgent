@@ -1,0 +1,13 @@
+name: Schedule Hugging Face Space
+
+on:
+  schedule:
+    - cron: "0 0 * * *"  # Runs every 24 hours at midnight UTC
+
+jobs:
+  trigger-space:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Hugging Face Space
+        run: |
+          curl -X POST https://huggingface.co/spaces/leonvillapun/BirthdayAgent.hf.space/run
