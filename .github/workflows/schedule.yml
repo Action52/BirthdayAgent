@@ -1,6 +1,7 @@
 name: Schedule Hugging Face Space
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: "0 0 * * *"  # Runs every 24 hours at midnight UTC
 
