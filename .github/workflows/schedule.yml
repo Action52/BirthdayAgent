@@ -11,4 +11,4 @@ jobs:
     steps:
       - name: Trigger Hugging Face Space
         run: |
-          curl -X POST https://huggingface.co/spaces/leonvillapun/BirthdayAgent.hf.space/run
+          curl -X POST https://huggingface.co/spaces/leonvillapun/BirthdayAgent.hf.space
